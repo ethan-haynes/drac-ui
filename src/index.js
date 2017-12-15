@@ -5,5 +5,10 @@ import './index.css'
 import App from './App'
 import registerServiceWorker from './registerServiceWorker'
 
-ReactDOM.render(<StyleRoot> <App /> </StyleRoot>, document.getElementById('root'))
+ReactDOM.render(
+  <StyleRoot>
+    <App />
+  </StyleRoot>,
+  document.getElementById('root')
+)
 registerServiceWorker()

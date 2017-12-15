@@ -3,6 +3,8 @@ import Radium from 'radium'
 import logo from './logo.svg'
 import * as styles from './App.style'
 
+import Button from './components/shared/Button'
+
 class App extends Component {
   render() {
     return (
@@ -14,6 +16,9 @@ class App extends Component {
         <p style={{...styles.AppIntro}}>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Button>
+        click me!
+        </Button>
       </div>
     )
   }
