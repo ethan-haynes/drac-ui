@@ -8,17 +8,19 @@ import Button from './components/shared/Button'
 class App extends Component {
   render() {
     return (
-      <div style={{...styles.App}}>
-        <header style={{...styles.AppHeader}}>
-          <img src={logo} style={{...styles.AppLogo}} alt="logo" />
-          <h1 style={{...styles.AppTitle}}>Welcome to React</h1>
+      <div style={styles.App}>
+        <header style={styles.AppHeader}>
+          <img src={logo} style={styles.AppLogo} alt="logo" />
+          <h1 style={styles.AppTitle}>Welcome to React</h1>
         </header>
-        <p style={{...styles.AppIntro}}>
+        <p style={styles.AppIntro}>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Button>
-        click me!
-        </Button>
+        <Button shadow> click me! </Button>
+        <Button round> click me! </Button>
+        <Button oval> click me! </Button>
+        <Button oval glow> click me! </Button>
+        <Button round shadow> click me! </Button>
       </div>
     )
   }

@@ -1,20 +1,50 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Radium from 'radium'
 
 const styles = {
-  button: {
+  buttonBase: {
     cursor: 'pointer',
-    backgroundColor: 'blue',
+    backgroundColor: '#047CE0',
     padding: 10,
+    color: 'white',
+    margin: 5,
+    ':hover': {
+      backgroundColor: '#1D94F6'
+    },
+    ':active': {
+      animation: 'x 1 1s ease-out forwards',
+      animationName: Radium.keyframes({
+        '0%': { backgroundColor: '#1D94F6' },
+        '100%': { backgroundColor: '#8CCEFF' }
+      }, 'bounce'),
+    }
+  },
+  round: {
+    borderRadius: 10,
+  },
+  oval: {
     borderRadius: 20,
-    color: 'white'
+  },
+  glow: {
+    boxShadow: '0 0 10px #047CE0'
+  },
+  shadow: {
+    boxShadow: '0 2px 10px #959595'
   }
 }
 
 export const Button = (props) => {
-  const { children } = props
+  const { children, round, oval, glow, shadow } = props
+  const style = {
+    ...styles.buttonBase,
+    ...round && styles.round,
+    ...oval && styles.oval,
+    ...glow && styles.glow,
+    ...shadow && styles.shadow,
+  }
+
   return (
-    <span style={{...styles.button}}>
+    <span style={style} >
       { children }
     </span>
   )
