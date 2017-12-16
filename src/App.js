@@ -4,6 +4,7 @@ import logo from './logo.svg'
 import * as styles from './App.style'
 
 import Button from './components/shared/Button'
+import Dialog from './components/shared/Dialog'
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
         <Button oval> click me! </Button>
         <Button oval glow> click me! </Button>
         <Button round shadow> click me! </Button>
+        <Dialog> Hi there! </Dialog>
       </div>
     )
   }

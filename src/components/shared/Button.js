@@ -20,7 +20,7 @@ const styles = {
     }
   },
   round: {
-    borderRadius: 10,
+    borderRadius: 5,
   },
   oval: {
     borderRadius: 20,
