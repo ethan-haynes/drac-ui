@@ -44,7 +44,7 @@ export const Button = (props) => {
   }
 
   return (
-    <span style={style} >
+    <span style={style} onClick={props.onClick}>
       { children }
     </span>
   )

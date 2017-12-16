@@ -17,11 +17,13 @@ class App extends Component {
         <p style={styles.AppIntro}>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Button shadow> click me! </Button>
-        <Button round> click me! </Button>
-        <Button oval> click me! </Button>
-        <Button oval glow> click me! </Button>
-        <Button round shadow> click me! </Button>
+        <div>
+          <Button shadow> click me! </Button>
+          <Button round> click me! </Button>
+          <Button oval> click me! </Button>
+          <Button oval glow> click me! </Button>
+          <Button round shadow> click me! </Button>
+        </div>
         <Dialog> Hi there! </Dialog>
       </div>
     )
