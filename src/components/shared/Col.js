@@ -12,7 +12,7 @@ export const Col = ({
       flex: 1,
       flexShrink: 1,
       flexBasis: 0,
-      textAlign: left ? 'left' : right && 'right',
+      textAlign: left ? 'left' : right ? 'right' : 'center',
     }}>
       { children }
     </span>
