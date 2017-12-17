@@ -1,12 +1,21 @@
 import React, { Component } from 'react'
 import Radium from 'radium'
 import Button from './Button'
+import Modal from './Modal'
 
 export class Dialog extends Component {
   state = { open: false }
 
   dialogContent = () =>
-    this.state.open && this.props.children
+    this.state.open && (
+      <Modal>
+        {this.props.children}
+        <Button
+          onClick={this.handleOnClick}>
+          close me!
+        </Button>
+      </Modal>
+    )
 
   handleOnClick = () =>
     this.setState({ open: !this.state.open })
@@ -15,7 +24,8 @@ export class Dialog extends Component {
     return (
       <div style={{margin: 10, padding: 10}}>
         {this.dialogContent()}
-        <Button onClick={handleOnClick}>
+        <Button
+          onClick={handleOnClick}>
           open me!
         </Button>
       </div>
