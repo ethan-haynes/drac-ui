@@ -30,7 +30,7 @@ class App extends Component {
           </Columns>
         </Row>
         <Row>
-          <Columns left>
+          <Columns right>
             <Dialog> Hi there! </Dialog>
           </Columns>
         </Row>

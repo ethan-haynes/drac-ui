@@ -9,11 +9,14 @@ import Columns from './Columns'
 export class Dialog extends Component {
   state = { open: false }
 
+  handleOnClick = () =>
+    this.setState(prevState => ({ open: !prevState.open }))
+
   dialogContent = () =>
     this.state.open && (
       <Modal>
-        <Row height='s'>
-          <Columns>
+        <Row height='S'>
+          <Columns left>
             {this.props.children}
           </Columns>
         </Row>
@@ -27,9 +30,6 @@ export class Dialog extends Component {
         </Row>
       </Modal>
     )
-
-  handleOnClick = () =>
-    this.setState({ open: !this.state.open })
 
   render({ props, handleOnClick } = this) {
     return (
