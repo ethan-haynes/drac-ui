@@ -5,6 +5,9 @@ import * as styles from './App.style'
 
 import Button from './components/shared/Button'
 import Dialog from './components/shared/Dialog'
+import Row from './components/shared/Row'
+import Col from './components/shared/Col'
+import Columns from './components/shared/Columns'
 
 class App extends Component {
   render() {
@@ -17,14 +20,20 @@ class App extends Component {
         <p style={styles.AppIntro}>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <div>
-          <Button shadow> click me! </Button>
-          <Button round> click me! </Button>
-          <Button oval> click me! </Button>
-          <Button oval glow> click me! </Button>
-          <Button round shadow> click me! </Button>
-        </div>
-        <Dialog> Hi there! </Dialog>
+        <Row>
+          <Columns>
+            <Button shadow> click me! </Button>
+            <Button round> click me! </Button>
+            <Button oval> click me! </Button>
+            <Button oval glow> click me! </Button>
+            <Button round shadow> click me! </Button>
+          </Columns>
+        </Row>
+        <Row>
+          <Columns>
+            <Dialog> Hi there! </Dialog>
+          </Columns>
+        </Row>
       </div>
     )
   }
