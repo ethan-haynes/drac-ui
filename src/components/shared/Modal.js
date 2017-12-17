@@ -13,8 +13,8 @@ export const Modal = (props) => {
       left: '50%',
       transform: 'translate(-50%, -50%)',
       padding: 20,
-      width: 300,
-      height: 150
+      minWidth: 300,
+      minHeight: 150
     }}>
       {props.children}
     </div>
