@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import Radium from 'radium'
 import Button from './Button'
 import Modal from './Modal'
+import Row from './Row'
+import Col from './Col'
+import Columns from './Columns'
 
 export class Dialog extends Component {
   state = { open: false }
@@ -9,11 +12,19 @@ export class Dialog extends Component {
   dialogContent = () =>
     this.state.open && (
       <Modal>
-        {this.props.children}
-        <Button
-          onClick={this.handleOnClick}>
-          close me!
-        </Button>
+        <Row height='s'>
+          <Columns>
+            {this.props.children}
+          </Columns>
+        </Row>
+        <Row>
+          <Col right>
+            <Button
+              onClick={this.handleOnClick}>
+              close me!
+            </Button>
+          </Col>
+        </Row>
       </Modal>
     )
 

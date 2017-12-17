@@ -1,16 +1,21 @@
 import React from 'react'
 import Radium from 'radium'
 
-export const Col = ({ children }) => {
+export const Col = ({
+  children,
+  left,
+  right
+}) => {
   return (
-    <div style={{
+    <span style={{
       margin: 10,
-      flexGrow: 1,
+      flex: 1,
       flexShrink: 1,
       flexBasis: 0,
+      textAlign: left ? 'left' : right && 'right',
     }}>
       { children }
-    </div>
+    </span>
   )
 }
 
