@@ -37,8 +37,13 @@ class App extends Component {
         </Row>
         <Row>
           <Columns right>
-            <Card>stuff and thangs</Card>
-            <Card>stuff</Card>
+            <Card header="Header">
+              stuff and thangs
+            </Card>
+            <Card img={{
+              alt: "Mountain View",
+              src: "http://r.ddmcdn.com/s_f/o_1/cx_462/cy_245/cw_1349/ch_1349/w_720/APL/uploads/2015/06/caturday-shutterstock_149320799.jpg"
+            }}>stuff</Card>
             <Card>stuff and thangs</Card>
             <Card>stuff and thangs</Card>
           </Columns>
