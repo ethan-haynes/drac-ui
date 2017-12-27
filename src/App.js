@@ -7,6 +7,7 @@ import Button from './components/shared/Button'
 import Dialog from './components/shared/Dialog'
 import Row from './components/shared/Row'
 import Col from './components/shared/Col'
+import Card from './components/shared/Card'
 import Columns from './components/shared/Columns'
 
 class App extends Component {
@@ -34,6 +35,15 @@ class App extends Component {
             <Dialog> Hi there! </Dialog>
           </Columns>
         </Row>
+        <Row>
+          <Columns right>
+            <Card>stuff and thangs</Card>
+            <Card>stuff</Card>
+            <Card>stuff and thangs</Card>
+            <Card>stuff and thangs</Card>
+          </Columns>
+        </Row>
+
       </div>
     )
   }
