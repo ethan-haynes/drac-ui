@@ -5,7 +5,7 @@ const styles = {
   container: {
     backgroundColor: 'white',
     boxShadow: '0 10px 50px #bdbdbd',
-    borderRadius: 2,
+    borderRadius: 7,
     padding: 20,
     minWidth: 25,
     minHeight: 25,
@@ -15,9 +15,9 @@ const styles = {
     fontSize: '1.5em'
   },
   img: {
-    width: 113.77,
-    boxShadow: '0 10px 50px #bdbdbd',
-    borderRadius: 2,
+    boxShadow: '0 15px 0 white, 0 0 20px #bdbdbd',
+    borderTopRightRadius: 7,
+    borderTopLeftRadius: 7,
     margin: -10
   }
 }
