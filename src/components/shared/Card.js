@@ -16,8 +16,9 @@ const styles = {
   },
   img: {
     width: 113.77,
+    boxShadow: '0 10px 50px #bdbdbd',
     borderRadius: 2,
-    marginBottom: -20
+    marginBottom: -10
   }
 }
 
