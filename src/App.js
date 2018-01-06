@@ -9,11 +9,20 @@ import Row from './components/shared/Row'
 import Col from './components/shared/Col'
 import Card from './components/shared/Card'
 import Columns from './components/shared/Columns'
+import Nav from './components/shared/Nav'
 
 class App extends Component {
   render() {
     return (
       <div style={styles.App}>
+        <Nav fixed>
+          <Row right>
+            <Button href="#cats">link here</Button>
+            <Button href="#cats">link here</Button>
+            <Button href="#cats">link here</Button>
+            <Button href="#cats">link here</Button>
+          </Row>
+        </Nav>
         <header style={styles.AppHeader}>
           <img src={logo} style={styles.AppLogo} alt="logo" />
           <h1 style={styles.AppTitle}>Welcome to React</h1>

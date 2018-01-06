@@ -7,7 +7,7 @@ const styles = {
     backgroundColor: '#047CE0',
     padding: 10,
     color: 'white',
-    margin: 5,
+    margin: 0,
     ':hover': {
       backgroundColor: '#1D94F6'
     },
