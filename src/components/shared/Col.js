@@ -8,11 +8,8 @@ export const Col = ({
 }) => {
   return (
     <span style={{
-      margin: 10,
       flex: 1,
-      flexShrink: 1,
-      flexBasis: 0,
-      textAlign: left ? 'left' : right ? 'right' : 'center',
+      margin: 10
     }}>
       { children }
     </span>

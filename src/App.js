@@ -21,32 +21,26 @@ class App extends Component {
         <p style={styles.AppIntro}>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Row>
-          <Columns>
-            <Button shadow> click me! </Button>
-            <Button round> click me! </Button>
-            <Button oval> click me! </Button>
-            <Button oval glow> click me! </Button>
-            <Button round shadow> click me! </Button>
-          </Columns>
+        <Row spread>
+          <Button shadow> click me! </Button>
+          <Button round> click me! </Button>
+          <Button oval> click me! </Button>
+          <Button oval glow> click me! </Button>
+          <Button round shadow> click me! </Button>
         </Row>
-        <Row>
-          <Columns right>
-            <Dialog> Hi there! </Dialog>
-          </Columns>
+        <Row stretch>
+          <Dialog> Hi there! </Dialog>
         </Row>
-        <Row>
-          <Columns right>
-            <Card header="Header">
-              stuff and thangs
-            </Card>
-            <Card header="thangs" img={{
-              alt: "Mountain View",
-              src: "http://r.ddmcdn.com/s_f/o_1/cx_462/cy_245/cw_1349/ch_1349/w_720/APL/uploads/2015/06/caturday-shutterstock_149320799.jpg"
-            }}>This is an example of a card with text and an image in it.</Card>
-            <Card>stuff and thangs</Card>
-            <Card>stuff and thangs</Card>
-          </Columns>
+        <Row stretch>
+          <Card header="Header">
+            stuff and thangs
+          </Card>
+          <Card header="thangs" img={{
+            alt: "Mountain View",
+            src: "http://r.ddmcdn.com/s_f/o_1/cx_462/cy_245/cw_1349/ch_1349/w_720/APL/uploads/2015/06/caturday-shutterstock_149320799.jpg"
+          }}>This is an example of a card with text and an image in it.</Card>
+          <Card>stuff and thangs</Card>
+          <Card>stuff and thangs</Card>
         </Row>
 
       </div>

@@ -18,16 +18,31 @@ const styles = {
     width: 113.77,
     boxShadow: '0 10px 50px #bdbdbd',
     borderRadius: 2,
-    marginBottom: -10
+    margin: -10
   }
 }
 
 export class Card extends Component {
-  state = { offsetWidth: 0 }
+  state = { offsetWidth: 0, windowWidth: window.innerWidth }
+
+  checkResize = (previousState) => {
+    const width = window.innerWidth
+    if (previousState.windowWidth > width) {
+      return {
+        offsetWidth: previousState.offsetWidth - (previousState.windowWidth - width),
+        windowWidth: previousState.windowWidth - width
+      }
+    } else {
+      return {
+        offsetWidth: this.refs.image_container.offsetWidth,
+        windowWidth: width
+      }
+    }
+  }
 
   updateDimensions = () => {
     const { offsetWidth } = this.refs.image_container
-    this.setState({ offsetWidth })
+    this.setState(this.checkResize)
   }
 
   componentWillUnmount() {
@@ -39,16 +54,15 @@ export class Card extends Component {
     window.addEventListener("resize", this.updateDimensions)
   }
 
-
   render ({ children, header, img } = this.props) {
     return (
-      <span>
+      <div>
         { img && <img src={img.src} alt={img.alt} style={{...styles.img, width: this.state.offsetWidth, height: 'auto'}} /> }
         <div style={{...styles.container}} ref="image_container">
           { header && <div style={{...styles.header}}> { header } </div> }
           { children }
         </div>
-      </span>
+      </div>
     )
   }
 }

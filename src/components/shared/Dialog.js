@@ -20,20 +20,18 @@ export class Dialog extends Component {
             {this.props.children}
           </Columns>
         </Row>
-        <Row>
-          <Col right>
-            <Button
-              onClick={this.handleOnClick}>
-              close me!
-            </Button>
-          </Col>
+        <Row right>
+          <Button
+            onClick={this.handleOnClick}>
+            close me!
+          </Button>
         </Row>
       </Modal>
     )
 
   render({ props, handleOnClick } = this) {
     return (
-      <div style={{margin: 10, padding: 10}}>
+      <div>
         {this.dialogContent()}
         <Button
           onClick={handleOnClick}>
