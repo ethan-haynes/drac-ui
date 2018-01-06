@@ -40,10 +40,10 @@ class App extends Component {
             <Card header="Header">
               stuff and thangs
             </Card>
-            <Card img={{
+            <Card header="thangs" img={{
               alt: "Mountain View",
               src: "http://r.ddmcdn.com/s_f/o_1/cx_462/cy_245/cw_1349/ch_1349/w_720/APL/uploads/2015/06/caturday-shutterstock_149320799.jpg"
-            }}>stuff</Card>
+            }}>stuff dsfonsdfofdsl dsfdfsjklfdskjsfkd fdslfsdljkfdsjl</Card>
             <Card>stuff and thangs</Card>
             <Card>stuff and thangs</Card>
           </Columns>
