@@ -1,7 +1,8 @@
 import Radium from 'radium'
 
 export const App = {
-  textAlign: 'center'
+  textAlign: 'center',
+  fontFamily: 'Helvetica',
 }
 
 export const AppLogoSpin = Radium.keyframes({
@@ -30,5 +31,5 @@ export const AppIntro = {
   fontSize: 'large',
   ':hover': {
     background: 'yellow'
-  } 
+  }
 }

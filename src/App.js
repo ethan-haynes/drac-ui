@@ -10,6 +10,7 @@ import Col from './components/shared/Col'
 import Card from './components/shared/Card'
 import Columns from './components/shared/Columns'
 import Nav from './components/shared/Nav'
+import Header from './components/shared/Header'
 
 class App extends Component {
   render() {
@@ -23,13 +24,9 @@ class App extends Component {
             <Button href="#cats">link here</Button>
           </Row>
         </Nav>
-        <header style={styles.AppHeader}>
-          <img src={logo} style={styles.AppLogo} alt="logo" />
-          <h1 style={styles.AppTitle}>Welcome to React</h1>
-        </header>
-        <p style={styles.AppIntro}>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Header title="stuff">
+          stuff
+        </Header>
         <Row spread>
           <Button shadow> click me! </Button>
           <Button round> click me! </Button>

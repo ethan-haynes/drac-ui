@@ -4,8 +4,8 @@ import Radium from 'radium'
 const styles = {
   container: {
     backgroundColor: 'white',
-    boxShadow: '0 10px 50px #bdbdbd',
-    borderRadius: 7,
+    boxShadow: '0 2px 5px #bdbdbd',
+    borderRadius: 4,
     padding: 20,
     minWidth: 25,
     minHeight: 25,
@@ -16,8 +16,8 @@ const styles = {
   },
   img: {
     boxShadow: '0 15px 0 white, 0 0 20px #bdbdbd',
-    borderTopRightRadius: 7,
-    borderTopLeftRadius: 7,
+    borderTopRightRadius: 4,
+    borderTopLeftRadius: 4,
     margin: -10
   }
 }
